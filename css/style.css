@@ -1,0 +1,190 @@
+/* common styles*/
+
+.navbar, .navbar ul, #welcome-section, #projects, .project-tile, #contact, .contact-header, .contact-links {
+    display: flex;
+}
+/* end of common styles*/
+/* --------------------------------------- */
+
+/* navbar styling */
+.navbar {
+    background-color: #70a0af;
+    width: 100%;
+    justify-content: flex-end;
+    position: fixed;
+    box-shadow: 0 2px 0 rgba(250, 250, 250, 0.7);
+}
+.navbar ul {
+    margin-right: 2em;
+}
+.navbar ul li:hover {
+    background-color: #706993;
+}
+.navbar ul li a {
+    display: block;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: white;
+    padding: 1.2em;
+}
+@media (max-width: 800px) {
+    .navbar {
+        justify-content: center;
+    }
+    .navbar ul {
+        margin: 0;
+    }
+    .navbar ul li a {
+        font-size: .8em;
+    }
+}
+/* END OF navbar styling */
+/* --------------------------------------- */
+
+
+/* main */
+
+/* welcome-section styling */
+#welcome-section {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #331e38;
+    height: 100vh;
+}
+#welcome-section h1 {
+    color: white;
+    font-size: 5em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    white-space: nowrap;
+}
+#welcome-section p {
+    color: #70a0af;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    white-space: nowrap;
+}
+/* END OF welcome-section styling  */
+/* --------------------------------------- */
+
+/* projects styling */
+#projects {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #706993;
+    width: 100%;
+    min-height: 100vh;
+}
+#projects h2 {
+    color: white;
+    font-size: 2em;
+    font-family: cursive;
+    font-weight: bold;
+    margin-bottom: 1em;
+    box-sizing : border-box;
+    padding: .4em;
+    border-bottom: .1em solid white;
+}
+
+#projects .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 2em;
+    padding: 1em 3em;
+}
+#projects .projects-grid .project-tile {
+    flex-direction: column;
+}
+#projects .project-tile img {
+    width: 100%;
+}
+#projects .project-tile p {
+    background-color: #331e38;;
+    text-align: center;
+    padding: 1em;
+    color: white;
+    font-weight: bold;
+    position: relative;
+}
+#projects .project-tile p #eye {
+    display: none;
+    height: 1em;
+    margin-top: 1em;
+    position: absolute;
+    top: 0;
+    left: 40%;
+}
+#projects .project-tile:hover p #eye{
+    display: inline;
+}
+
+#projects #show-all {
+    background-color: #331e38;;
+    text-align: center;
+    padding: .5em 2em;
+    color: #706993;
+    font-weight: bold;
+    margin-top: 1em;
+}
+#projects #show-all:hover {
+    color: white;
+}
+/* END OFprojects styling */
+/* --------------------------------------- */
+
+/* contact styling */
+#contact {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #331e38;
+    min-height: 100vh;
+}
+#contact .contact-header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#contact .contact-header h2 {
+    color: white;
+    font-size: 5em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    margin-bottom: .3em;
+    white-space: nowrap;
+}
+#contact .contact-header p {
+    color: #706993;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    margin-bottom: 2em;
+    white-space: nowrap;
+}
+#contact .contact-links {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#contact .contact-links a {
+    margin: 2em;
+    color: white;
+    font-size: 1.5em;
+}
+/* END OF contact styling */
+/* --------------------------------------- */
+
+/* footer */
+footer {
+    background-color: #331e38;
+    border-top: 2px solid #70a0af;
+}
+footer P {
+    padding: 2em;
+    text-align: center;
+    color: white;
+}
+/* END OF footer */
+/* --------------------------------------- */
+
+/* END OF main */
