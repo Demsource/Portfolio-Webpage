@@ -114,17 +114,15 @@
     padding: 1em;
     color: white;
     font-weight: bold;
-    position: relative;
 }
 #projects .project-tile p #eye {
-    display: none;
+    display: inline-block;
     width: 1.5em;
-    position: absolute;
-    top: 30%;
-    left: 85%;
+    margin-left: 5%;
+    transition: all .2s linear;
 }
 #projects .project-tile:hover p #eye{
-    display: inline;
+    transform: translate(20%, 0);
 }
 
 #projects #show-all {
