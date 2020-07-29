@@ -118,11 +118,10 @@
 }
 #projects .project-tile p #eye {
     display: none;
-    height: 1em;
-    margin-top: 1em;
+    width: 1.5em;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 30%;
+    left: 85%;
 }
 #projects .project-tile:hover p #eye{
     display: inline;
