@@ -1,26 +1,26 @@
 /* common styles*/
 
-.navbar, .navbar ul, #welcome-section, #projects, .project-tile, #contact, .contact-header, .contact-links {
+#navbar, #navbar ul, #welcome-section, #projects, .project-tile, #contact, .contact-header, .contact-links {
     display: flex;
 }
 /* end of common styles*/
 /* --------------------------------------- */
 
 /* navbar styling */
-.navbar {
+#navbar {
     background-color: #70a0af;
     width: 100%;
     justify-content: flex-end;
     position: fixed;
     box-shadow: 0 2px 0 rgba(250, 250, 250, 0.7);
 }
-.navbar ul {
+#navbar ul {
     margin-right: 2em;
 }
-.navbar ul li:hover {
+#navbar ul li:hover {
     background-color: #706993;
 }
-.navbar ul li a {
+#navbar ul li a {
     display: block;
     font-size: 1.2em;
     font-weight: bold;
@@ -28,13 +28,13 @@
     padding: 1.2em;
 }
 @media (max-width: 800px) {
-    .navbar {
+    #navbar {
         justify-content: center;
     }
-    .navbar ul {
+    #navbar ul {
         margin: 0;
     }
-    .navbar ul li a {
+    #navbar ul li a {
         font-size: .8em;
     }
 }
@@ -64,6 +64,14 @@
     font-family: 'Poppins', sans-serif;
     font-size: 2em;
     white-space: nowrap;
+}
+@media (max-width: 720px) {
+    #welcome-section h1 {
+        font-size: 2.5em;
+    }
+    #welcome-section p {
+        font-size: 1em;
+    }
 }
 /* END OF welcome-section styling  */
 /* --------------------------------------- */
@@ -165,13 +173,29 @@
 #contact .contact-links {
     flex-wrap: wrap;
     justify-content: space-around;
+    box-sizing: border-box;
 }
 #contact .contact-links a {
     margin: 2em;
     color: white;
     font-size: 1.5em;
+    transition: all .3s ease-in-out;
+}
+#contact .contact-links a:hover {
+    transform: translate(0, 10px);
+}
+@media (max-width: 820px) {
+    #contact .contact-header h2 {
+        font-size: 2.5em;
+    }
+    #contact .contact-header p {
+        font-size: 1em;
+    }
 }
 /* END OF contact styling */
+/* --------------------------------------- */
+
+/* END OF main */
 /* --------------------------------------- */
 
 /* footer */
@@ -183,8 +207,7 @@ footer P {
     padding: 2em;
     text-align: center;
     color: white;
+    font-size: small;
 }
 /* END OF footer */
 /* --------------------------------------- */
-
-/* END OF main */
